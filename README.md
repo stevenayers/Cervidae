@@ -1,4 +1,4 @@
-# ELK-toolbox
+# Cervidae
 Stateless ELK Stack using Puppet &amp; Terraform in AWS
 
 This project has the aim to provide the ELK stack out of the box, which will launch a generic installation, which can be easily modified to suit the needs of specific situations. Elasticsearch, Logstash and Kabana will all be installed in an AWS VPC, while your client machines can either be on-premise or in the cloud with support for Several different OS versions.
