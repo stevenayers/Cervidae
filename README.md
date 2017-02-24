@@ -16,7 +16,7 @@ To save money on AWS, the stack will also be stateless, and can be torn down at 
 ## Functional Technologies
 * Elasticsearch
 * Logstash
-* Kabana
+* Kibana
 * Filebeat
 
 ## Objectives
@@ -37,5 +37,5 @@ To save money on AWS, the stack will also be stateless, and can be torn down at 
 * Support for Centos 7 only (No other OS support required, not to be installed within legacy environments, in AWS).
 * X-Platform bootstrap script (store publically so can be curled) to install Puppet.
 * Configure Puppet as Masterless
-* Puppet installs Elasticsearch, Logstash and Kabana respectively.
+* Puppet installs Elasticsearch, Logstash and Kibana respectively.
 * S3 Backups from Elasticsearch daily.
