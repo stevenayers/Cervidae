@@ -2,39 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdc31269-9b59-45fb-9c5a-ef4cf3cf7e25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/Puppetfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/auth.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/hiera.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/hieradata/common.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/hieradata/server_types/bastion.fnc-tools.co.uk.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/hieradata/server_types/elasticsearch.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/hieradata/server_types/ip-10-0-0-212.eu-west-1.compute.internal.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/manifests/site.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/default.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/elasticsearch.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/kibana.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/logstash.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/puppet.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/kibana/kibana.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/kibana/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/logstash/logstash.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/logstash/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/autoscaling/autoscaling.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/autoscaling/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/vpc/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/modules/vpc/vpc.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/security-groups.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/subnets.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/variables.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/vpc.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/s3/s3.tf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/s3/variables.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/files/.keep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/backup/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/cron/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/elasticsearch/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/firewall/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/groups/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users/init.pp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/templates/.keep" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +28,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/backup/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -59,8 +38,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/kibana/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/cron/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -69,8 +48,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/logstash/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/elasticsearch/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -79,8 +58,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/modules/autoscaling/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/firewall/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -89,8 +68,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/groups/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,8 +78,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/modules/vpc/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -109,8 +88,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/network/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -119,8 +98,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Terraform/s3/variables.tf">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate/init.pp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -129,21 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Puppetfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/Puppetfile">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash/init.pp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hiera.yaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Puppet/hiera.yaml">
+      <file leaf-file-name="init.pp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users/init.pp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,9 +206,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Puppet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,19 +240,19 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users" />
+      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash" />
+      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate" />
+      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana" />
+      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Terraform/modules/vpc" />
       <recent name="$PROJECT_DIR$/Terraform/modules/s3" />
       <recent name="$PROJECT_DIR$/Terraform/modules/ec2" />
       <recent name="$PROJECT_DIR$/Terraform/modules/autoscaling" />
       <recent name="$PROJECT_DIR$/Terraform/s3" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Terraform/s3" />
-      <recent name="$PROJECT_DIR$/Terraform/network" />
-      <recent name="$PROJECT_DIR$/Terraform/modules/vpc" />
-      <recent name="$PROJECT_DIR$/Terraform/modules/s3" />
-      <recent name="$PROJECT_DIR$/Terraform/modules/ec2" />
     </key>
   </component>
   <component name="RunManager">
@@ -400,21 +397,21 @@
       <updated>1487948484314</updated>
       <workItem from="1487948485785" duration="430000" />
       <workItem from="1488042461197" duration="3317000" />
+      <workItem from="1488056220858" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3747000" />
+    <option name="totallyTimeSpent" value="3835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -426,6 +423,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -443,6 +441,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Puppet/hiera.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -467,14 +473,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/Puppet/fnc-puppet.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/fnc-puppet.iml" />
     <entry file="file://$PROJECT_DIR$/Puppet/puppet.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -523,14 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/hieradata/server_type/bastion.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/hieradata/server_type/bastion.yaml" />
     <entry file="file://$PROJECT_DIR$/Puppet/hieradata/server_types/bastion.fnc-tools.co.uk.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -595,14 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/s3/s3.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/s3/s3.tf" />
     <entry file="file://$PROJECT_DIR$/Terraform/modules/vpc/vpc.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -611,14 +596,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/security-groups.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/security-groups.tf" />
     <entry file="file://$PROJECT_DIR$/Terraform/modules/autoscaling/autoscaling.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -691,14 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/s3/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/s3/variables.tf" />
     <entry file="file://$PROJECT_DIR$/Terraform/modules/vpc/variables.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -735,6 +706,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/files/.keep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/templates/.keep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/backup/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/cron/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/elasticsearch/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/firewall/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/groups/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
