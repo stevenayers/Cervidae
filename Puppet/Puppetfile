@@ -1,0 +1,38 @@
+forge "https://forgeapi.puppetlabs.com"
+
+# Stdlib
+mod "puppetlabs/stdlib"
+
+# Manage accounts
+mod 'puppet-accounts',
+    :git => "git://github.com/puppetlabs/puppetlabs-accounts"
+
+# Manange cron
+mod 'rmueller-cron'
+
+# Manage /etc/issue
+mod 'puppet-issue',
+    :git => "git://github.com/axltxl/puppet-issue.git"
+
+# Manage MOTD
+mod 'puppetlabs-motd',
+    :git => "git://github.com/puppetlabs/puppetlabs-motd.git"
+
+# Manage firewalls
+mod 'puppet-firewalls',
+    :git => "git://github.com/puppetlabs/puppetlabs-firewall.git"
+
+# Log rotate
+mod 'yo61-logrotate', '1.4.0'
+
+# Manage Elasticsearch
+mod 'elastic-elasticsearch', '5.0.0'
+
+# Manage Logstash
+mod 'elasticsearch-logstash', '0.6.6'
+
+#Manage Kibana
+mod 'lesaux-kibana4', '1.0.17'
+
+# Manage Java
+mod 'puppetlabs-java', '1.6.0'

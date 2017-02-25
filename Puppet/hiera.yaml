@@ -1,0 +1,11 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "server_type/%{::server_type}"
+  - common
+
+:yaml:
+# When specifying a datadir, make sure the directory exists.
+  :datadir: "/etc/puppet/hieradata"
+

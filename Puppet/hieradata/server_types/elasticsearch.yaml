@@ -1,0 +1,6 @@
+---
+
+classes:
+  - fnc_core::roles::bastion
+
+collectd::hostname: 'ci-bastion'
