@@ -28,9 +28,17 @@ variable "instance_type" {
 
 variable "server_type" {
   description = "The server_type value is used inside the bootstrap script to set the server_type, a fact used by Puppet."
-  default = ""
+  default     = ""
 }
 
 variable "key_pair" {
   description = "The Key Pair to be used on this instance. This value is overriden in ../main.tf."
+}
+
+variable "default_sg_id" {
+  description = "The ID for the security group applied to all instances. This is defined in the network module."
+}
+
+variable "sg_id" {
+  description = "The ID for the specific instance being passed into this module."
 }

@@ -1,5 +1,5 @@
 resource "aws_subnet" "default" {
-  vpc_id = "${aws_vpc.default.id}"
+  vpc_id     = "${aws_vpc.default.id}"
   cidr_block = "${var.subnet_cidr}"
   tags {
     Name = "${var.label}"
@@ -8,7 +8,6 @@ resource "aws_subnet" "default" {
 output "frontend_subnet_id" {
   value = "${aws_subnet.default.id}"
 }
-
 
 resource "aws_route_table" "default" {
   vpc_id = "${aws_vpc.default.id}"
@@ -22,7 +21,7 @@ resource "aws_route_table" "default" {
 }
 
 resource "aws_route_table_association" "default" {
-  subnet_id = "${aws_subnet.default.id}"
+  subnet_id      = "${aws_subnet.default.id}"
   route_table_id = "${aws_route_table.default.id}"
 }
 

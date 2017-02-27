@@ -2,15 +2,16 @@ module "network" {
   source      = "./network"
   region      = "${var.region}"
   profile     = "${var.profile}"
-  vpc_cidr    = "10.0.0.0/16"
-  subnet_cidr = "10.0.0.0/24"
-  label       = "Cervidae"
+  vpc_cidr    = "${var.vpc_cidr}"
+  subnet_cidr = "${var.subnet_cidr}"
+  label       = "${var.network_label}"
 }
 
 module "s3" {
-  source  = "./s3"
-  region  = "${var.region}"
-  profile = "${var.profile}"
+  source      = "./s3"
+  region      = "${var.region}"
+  profile     = "${var.profile}"
+  bucket_name = "${var.bucket_name}"
 }
 
 module "elasticsearch" {
@@ -21,8 +22,8 @@ module "elasticsearch" {
   instance_type = "${var.global_instance_type}"
   vpc_id        = "${module.network.vpc_id}"
   subnet_id     = "${module.network.subnet_id}"
-  server_type   = "elasticsearch"
-  key_pair      = ""
+  server_type   = "${var.es_server_type}"
+  key_pair      = "${var.key_pair}"
   default_sg_id = "${module.network.default_sg_id}"
 }
 
@@ -34,8 +35,8 @@ module "kibana" {
   instance_type = "${var.global_instance_type}"
   vpc_id        = "${module.network.vpc_id}"
   subnet_id     = "${module.network.subnet_id}"
-  server_type   = "kibana"
-  key_pair      = ""
+  server_type   = "${var.kb_server_type}"
+  key_pair      = "${var.key_pair}"
   default_sg_id = "${module.network.default_sg_id}"
 }
 
@@ -47,7 +48,7 @@ module "logstash" {
   instance_type = "${var.global_instance_type}"
   vpc_id        = "${module.network.vpc_id}"
   subnet_id     = "${module.network.subnet_id}"
-  server_type   = "logstash"
-  key_pair      = ""
+  server_type   = "${var.ls_server_type}"
+  key_pair      = "${var.key_pair}"
   default_sg_id = "${module.network.default_sg_id}"
 }

@@ -6,6 +6,6 @@ module "ec2" {
   server_type   = "${var.server_type}"
   key_pair      = "${var.key_pair}"
   subnet_id     = "${var.subnet_id}"
-  sg_id         = ""
-  default_sg_id = ""
+  sg_id         = "${aws_security_group.elasticsearch.id}"
+  default_sg_id = "${var.default_sg_id}"
 }
