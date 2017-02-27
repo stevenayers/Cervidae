@@ -23,19 +23,9 @@ variable "key_pair" {
   default     = "cervidae"
 }
 
-variable "es_server_type" {
-  description = "This is a dictionary of the puppet fact used to deploy the server role for elasticsearch."
-  default     = "elasticsearch"
-}
-
-variable "ls_server_type" {
-  description = "This is a dictionary of the puppet fact used to deploy the server role for logstash."
-  default     = "logstash"
-}
-
-variable "kb_server_type" {
-  description = "This is a dictionary of the puppet fact used to deploy the server role for kibana."
-  default     = "kibana"
+variable "private_key_path" {
+  description = "File name of private key used to access all instances. Please store in private_keys dir in project root. You can set these individually in an instance's module."
+  default     = "cervidae.pem"
 }
 
 variable "vpc_cidr" {

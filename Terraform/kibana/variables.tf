@@ -28,11 +28,15 @@ variable "instance_type" {
 
 variable "server_type" {
   description = "The server_type value is used inside the bootstrap script to set the server_type, a fact used by Puppet."
-  default     = ""
+  default     = "kibana"
 }
 
 variable "key_pair" {
-  description = "The Key Pair to be used on this instance. This value is overriden in ../main.tf."
+  description = "The Key Pair to be used on this instance."
+}
+
+variable "private_key_path" {
+  description = "File name of private key used to access instance. Please store in private_keys dir in project root."
 }
 
 variable "default_sg_id" {

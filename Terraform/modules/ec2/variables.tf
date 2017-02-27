@@ -32,7 +32,11 @@ variable "server_type" {
 }
 
 variable "key_pair" {
-  description = "The Key Pair to be used on this instance. This value is overriden in ../main.tf."
+  description = "The Key Pair to be used on this instance."
+}
+
+variable "private_key_path" {
+  description = "The path of the private key for the key pair specified in the key_pair variable."
 }
 
 variable "default_sg_id" {
@@ -41,4 +45,9 @@ variable "default_sg_id" {
 
 variable "sg_id" {
   description = "The ID for the specific instance being passed into this module."
+}
+
+variable "remote_user" {
+  description = "The account that should be used on the instance for the remote-exec and file provisioner."
+  default     = "centos"
 }

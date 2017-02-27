@@ -1,0 +1,7 @@
+.idea
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
+autoscaling
+Terraform/private_keys/*
+!.keep
