@@ -2,18 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdc31269-9b59-45fb-9c5a-ef4cf3cf7e25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/files/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/backup/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/cron/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/elasticsearch/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/firewall/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/groups/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users/init.pp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Puppet/modules/Cervidae/templates/.keep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/kibana/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/kibana/security-group.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/logstash/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/logstash/security-group.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/main.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/network/security-group.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/s3/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terraform/variables.tf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Terraform/modules/vpc/variables.tf" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Terraform/modules/vpc/vpc.tf" afterPath="$PROJECT_DIR$/Terraform/aws.tf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Terraform/network/security-groups.tf" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/security-group.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Cervidae.iml" afterPath="$PROJECT_DIR$/.idea/Cervidae.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/elasticsearch/variables.tf" afterPath="$PROJECT_DIR$/Terraform/elasticsearch/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/kibana/kibana.tf" afterPath="$PROJECT_DIR$/Terraform/kibana/kibana.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/kibana/variables.tf" afterPath="$PROJECT_DIR$/Terraform/kibana/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/logstash/logstash.tf" afterPath="$PROJECT_DIR$/Terraform/logstash/logstash.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/logstash/variables.tf" afterPath="$PROJECT_DIR$/Terraform/logstash/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/modules/ec2/variables.tf" afterPath="$PROJECT_DIR$/Terraform/modules/ec2/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/network/subnets.tf" afterPath="$PROJECT_DIR$/Terraform/network/subnets.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/network/variables.tf" afterPath="$PROJECT_DIR$/Terraform/network/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/network/vpc.tf" afterPath="$PROJECT_DIR$/Terraform/network/vpc.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Terraform/s3/variables.tf" afterPath="$PROJECT_DIR$/Terraform/s3/variables.tf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,107 +44,124 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/backup/init.pp">
+      <file leaf-file-name="logstash.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Terraform/logstash/logstash.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <marker date="1488134080000" expanded="true" signature="69:82" ph="${...}" />
+                <marker date="1488134080000" expanded="true" signature="103:123" ph="${...}" />
+                <marker date="1488134080000" expanded="true" signature="144:157" ph="${...}" />
+                <marker date="1488134080000" expanded="true" signature="178:196" ph="${...}" />
+                <marker date="1488134080000" expanded="true" signature="217:232" ph="${...}" />
+                <marker date="1488134080000" expanded="true" signature="253:269" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kibana.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Terraform/kibana/kibana.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <marker date="1488134090000" expanded="true" signature="69:82" ph="${...}" />
+                <marker date="1488134090000" expanded="true" signature="103:123" ph="${...}" />
+                <marker date="1488134090000" expanded="true" signature="144:157" ph="${...}" />
+                <marker date="1488134090000" expanded="true" signature="178:196" ph="${...}" />
+                <marker date="1488134090000" expanded="true" signature="217:232" ph="${...}" />
+                <marker date="1488134090000" expanded="true" signature="253:269" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security-group.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Terraform/network/security-group.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <folding>
+                <marker date="1488180865000" expanded="true" signature="54:75" ph="${...}" />
+                <marker date="1488180865000" expanded="true" signature="275:284" ph="${...}" />
+                <marker date="1488180865000" expanded="true" signature="482:514" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Terraform/main.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <marker date="1488180972000" expanded="true" signature="64:77" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="96:110" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="248:261" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="276:290" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="375:388" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="409:423" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="444:464" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="485:512" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="533:557" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="578:605" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="681:712" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="783:796" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="817:831" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="852:872" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="893:920" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="941:965" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="986:1013" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1082:1113" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1188:1201" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1222:1236" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1257:1277" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1298:1325" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1346:1370" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1391:1418" ph="${...}" />
+                <marker date="1488180972000" expanded="true" signature="1489:1520" ph="${...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/cron/init.pp">
+      <file leaf-file-name="security-group.tf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/security-group.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/elasticsearch/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/firewall/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/groups/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.pp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users/init.pp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="390">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <folding>
+                <marker date="1488180550000" expanded="true" signature="60:73" ph="${...}" />
+                <marker date="1488180550000" expanded="true" signature="454:492" ph="${...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>elasticsearch</find>
+      <find>Elasticsearch</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>kibana</replace>
+      <replace>Logstash</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,6 +171,29 @@
       <list>
         <option value="$PROJECT_DIR$/Puppet/fnc-puppet.iml" />
         <option value="$PROJECT_DIR$/Puppet/Puppetfile" />
+        <option value="$PROJECT_DIR$/Terraform/aws.tf" />
+        <option value="$PROJECT_DIR$/Terraform/modules/ec2/security-groups.tf" />
+        <option value="$PROJECT_DIR$/Terraform/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/s3/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/network/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/network/vpc.tf" />
+        <option value="$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh" />
+        <option value="$PROJECT_DIR$/Terraform/network/subnets.tf" />
+        <option value="$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf" />
+        <option value="$PROJECT_DIR$/Terraform/modules/ec2/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/logstash/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/kibana/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/elasticsearch/variables.tf" />
+        <option value="$PROJECT_DIR$/Terraform/logstash/logstash.tf" />
+        <option value="$PROJECT_DIR$/Terraform/kibana/kibana.tf" />
+        <option value="$PROJECT_DIR$/Terraform/modules/ec2/security-group.tf" />
+        <option value="$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf" />
+        <option value="$PROJECT_DIR$/Terraform/elasticsearch/security-group.tf" />
+        <option value="$PROJECT_DIR$/Terraform/kibana/security-group.tf" />
+        <option value="$PROJECT_DIR$/Terraform/logstash/security-group.tf" />
+        <option value="$PROJECT_DIR$/Terraform/network/security-group.tf" />
+        <option value="$PROJECT_DIR$/Terraform/main.tf" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -166,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,7 +260,167 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logstash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kibana" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terraform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elasticsearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Puppet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Puppet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Puppet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cervidae" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,8 +444,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,19 +456,19 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/users" />
-      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logstash" />
-      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/logrotate" />
-      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/kibana" />
-      <recent name="$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/profiles/java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Terraform/network" />
       <recent name="$PROJECT_DIR$/Terraform/modules/vpc" />
       <recent name="$PROJECT_DIR$/Terraform/modules/s3" />
       <recent name="$PROJECT_DIR$/Terraform/modules/ec2" />
       <recent name="$PROJECT_DIR$/Terraform/modules/autoscaling" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Terraform/logstash" />
+      <recent name="$PROJECT_DIR$/Terraform/kibana" />
       <recent name="$PROJECT_DIR$/Terraform/s3" />
+      <recent name="$PROJECT_DIR$/Terraform/network" />
+      <recent name="$PROJECT_DIR$/Terraform/modules" />
     </key>
   </component>
   <component name="RunManager">
@@ -397,22 +613,24 @@
       <updated>1487948484314</updated>
       <workItem from="1487948485785" duration="430000" />
       <workItem from="1488042461197" duration="3317000" />
-      <workItem from="1488056220858" duration="88000" />
+      <workItem from="1488056220858" duration="105000" />
+      <workItem from="1488110856393" duration="85000" />
+      <workItem from="1488110948546" duration="12945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3835000" />
+    <option name="totallyTimeSpent" value="16882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26108727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -441,141 +659,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Puppet/hiera.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/stevea37-rsyslog/spec/classes/init_spec.rb" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/Puppet/fnc-puppet.iml" />
-    <entry file="file://$PROJECT_DIR$/Puppet/puppet.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/logstash.pp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/elasticsearch.pp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/kibana.pp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/manifests/site.pp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/modules/Cervidae/manifests/roles/default.pp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Puppet/hieradata/server_type/bastion.yaml" />
-    <entry file="file://$PROJECT_DIR$/Puppet/hieradata/server_types/bastion.fnc-tools.co.uk.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Puppet/hieradata/common.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/network/vpc.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/logstash/logstash.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/kibana/kibana.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,47 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/network/subnets.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/kibana/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/logstash/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,15 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,23 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/network/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Terraform/s3/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,6 +815,329 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/kibana/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/logstash/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/network/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/s3/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+          <folding>
+            <marker date="1488112646000" expanded="true" signature="30:43" ph="${...}" />
+            <marker date="1488112646000" expanded="true" signature="58:72" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/s3/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/network/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/bootstrap.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/network/subnets.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <marker date="1488133887000" expanded="true" signature="46:67" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="85:103" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="126:138" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="187:211" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="268:289" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="348:382" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="409:421" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="496:520" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="542:571" ph="${...}" />
+            <marker date="1488133887000" expanded="true" signature="608:632" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/ec2.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <marker date="1488133949000" expanded="true" signature="41:54" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="75:95" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="112:128" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="159:191" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="195:227" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="282:297" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="321:339" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="389:411" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="495:512" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="514:536" ph="${...}" />
+            <marker date="1488133949000" expanded="true" signature="697:726" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/modules/ec2/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/logstash/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/kibana/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/logstash/logstash.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1488134080000" expanded="true" signature="69:82" ph="${...}" />
+            <marker date="1488134080000" expanded="true" signature="103:123" ph="${...}" />
+            <marker date="1488134080000" expanded="true" signature="144:157" ph="${...}" />
+            <marker date="1488134080000" expanded="true" signature="178:196" ph="${...}" />
+            <marker date="1488134080000" expanded="true" signature="217:232" ph="${...}" />
+            <marker date="1488134080000" expanded="true" signature="253:269" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/kibana/kibana.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1488134090000" expanded="true" signature="69:82" ph="${...}" />
+            <marker date="1488134090000" expanded="true" signature="103:123" ph="${...}" />
+            <marker date="1488134090000" expanded="true" signature="144:157" ph="${...}" />
+            <marker date="1488134090000" expanded="true" signature="178:196" ph="${...}" />
+            <marker date="1488134090000" expanded="true" signature="217:232" ph="${...}" />
+            <marker date="1488134090000" expanded="true" signature="253:269" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/kibana/security-group.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1488180550000" expanded="true" signature="53:66" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="426:457" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/logstash/security-group.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1488180562000" expanded="true" signature="55:68" ph="${...}" />
+            <marker date="1488180562000" expanded="true" signature="434:467" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/elasticsearch.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <marker date="1488180550000" expanded="true" signature="69:82" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="103:123" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="144:157" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="178:196" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="217:232" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="253:269" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/elasticsearch/security-group.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1488180550000" expanded="true" signature="60:73" ph="${...}" />
+            <marker date="1488180550000" expanded="true" signature="454:492" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/network/vpc.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1488132032000" expanded="true" signature="47:62" ph="${...}" />
+            <marker date="1488132032000" expanded="true" signature="143:155" ph="${...}" />
+            <marker date="1488132032000" expanded="true" signature="220:241" ph="${...}" />
+            <marker date="1488132032000" expanded="true" signature="264:276" ph="${...}" />
+            <marker date="1488132032000" expanded="true" signature="313:334" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/network/security-group.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <marker date="1488180865000" expanded="true" signature="54:75" ph="${...}" />
+            <marker date="1488180865000" expanded="true" signature="275:284" ph="${...}" />
+            <marker date="1488180865000" expanded="true" signature="482:514" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Terraform/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <marker date="1488180972000" expanded="true" signature="64:77" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="96:110" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="248:261" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="276:290" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="375:388" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="409:423" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="444:464" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="485:512" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="533:557" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="578:605" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="681:712" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="783:796" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="817:831" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="852:872" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="893:920" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="941:965" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="986:1013" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1082:1113" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1188:1201" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1222:1236" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1257:1277" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1298:1325" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1346:1370" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1391:1418" ph="${...}" />
+            <marker date="1488180972000" expanded="true" signature="1489:1520" ph="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding />
         </state>
       </provider>
