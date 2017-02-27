@@ -6,13 +6,29 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = false
   key_name                    = "${var.key_pair}"
 
+  tags {
+    Name = "${var.server_type}"
+  }
+}
+
+resource "aws_eip" "ec2" {
+  instance = "${aws_instance.ec2.id}"
+  vpc      = true
+}
+
+resource "null_resource" "bootstrap" {
+  triggers {
+    ec2_id = "${aws_eip.ec2.id}, ${aws_instance.ec2.id}"
+  }
+
   provisioner "file" {
-    source      = "bootstrap.sh"
+    source      = "${path.module}/bootstrap.sh"
     destination = "/tmp/bootstrap.sh"
     connection {
       type        = "ssh"
       user        = "${var.remote_user}"
       private_key = "${file("${path.root}/private_keys/${var.private_key_path}")}"
+      host        = "${aws_eip.ec2.public_ip}"
     }
   }
 
@@ -25,15 +41,7 @@ resource "aws_instance" "ec2" {
       type        = "ssh"
       user        = "${var.remote_user}"
       private_key = "${file("${path.root}/private_keys/${var.private_key_path}")}"
+      host        = "${aws_eip.ec2.public_ip}"
     }
   }
-
-  tags {
-    Name = "${var.server_type}"
-  }
-}
-
-resource "aws_eip" "ec2" {
-  instance = "${aws_instance.ec2.id}"
-  vpc      = true
 }
