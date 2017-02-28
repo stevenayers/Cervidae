@@ -8,5 +8,5 @@ if versioncmp($::puppetversion,'3.6.1') >= 0 {
 }
 
 node default {
-  hiera_include('classes', 'cervidae::roles::default')
+  hiera_include('classes')
 }
