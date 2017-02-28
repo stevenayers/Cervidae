@@ -1,16 +1,16 @@
-variable "region" {
-  description = "The AWS region you want to deploy this instance to. This value is overriden in ../main.tf."
-  default     = "eu-west-1"
-}
-
-variable "profile" {
-  description = "The profile you want to use inside your ~/.aws/credentials file. This value is overriden in ../main.tf."
-  default     = "default"
-}
+##################################################################################################################
+#                                                                                                                #
+# There are only two variables that should ever be modified in this file:                                        #
+#   - remote_user: When you need the connection provisioner to use a different username other than centos.       #
+#   - server_type: When the puppet fact 'server_type' isn't set further upstream, you can use a default value    #
+#                  here which will allow you to define a default puppet role.                                    #
+#                                                                                                                #
+# Further reading: https://www.terraform.io/docs/configuration/variables.html                                    #
+#                                                                                                                #
+##################################################################################################################
 
 variable "ami_id" {
-  description = "The AMI ID to be used on this instance. This value is overriden in ../main.tf."
-  default     = "ami-7abd0209"
+  description = "The AMI ID to be used on this instance."
 }
 
 variable "vpc_id" {
@@ -22,13 +22,12 @@ variable "subnet_id" {
 }
 
 variable "instance_type" {
-  description = "The instance size to be used on this instance. This value is overriden in ../main.tf."
-  default     = "t2.nano"
+  description = "The instance size to be used on this instance. This value is overriden in"
 }
 
 variable "server_type" {
   description = "The server_type value is used inside the bootstrap script to set the server_type, a fact used by Puppet."
-  default     = ""
+  default     = "default"
 }
 
 variable "key_pair" {

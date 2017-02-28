@@ -5,15 +5,20 @@
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/subnet.html                                     #
 #                                                                                                                #
+#                                                                                                                #
 # The Amazon Web Services (AWS) AWS_ROUTE_TABLE Resource provisions and configures an route table.               #
+#                                                                                                                #
 # A route table contains a set of rules, called routes, that are used to determine where network traffic         #
 # is directed.                                                                                                   #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/route_table.html                                #
 #                                                                                                                #
-# The Amazon Web Services (AWS) AWS_ROUTE_TABLE_ASSOCIATE attaches a Route Table Resource to a Subnet Resource.  #
+#                                                                                                                #
+# The Amazon Web Services (AWS) AWS_ROUTE_TABLE_ASSOCIATION attaches a Route Table resource to a                 #
+# Subnet resource.                                                                                               #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/route_table.html                                #
+#                                                                                                                #
 #                                                                                                                #
 # Output variables are used upstream in the root project, and passed into the EC2 component modules.             #
 #                                                                                                                #

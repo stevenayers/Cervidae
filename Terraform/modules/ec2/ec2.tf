@@ -39,7 +39,7 @@
 # A null_resource behaves exactly like any other resource, so you configure provisioners, connection details,    #
 # and other meta-parameters in the same way you would on any other resource.                                     #
 #                                                                                                                #
-# This allows fine-grained control over when provisioners run in the dependency graph..                          #
+# This allows fine-grained control over when provisioners run in the dependency graph.                           #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/provisioners/null_resource.html                                 #
 #                                                                                                                #
