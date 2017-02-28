@@ -1,3 +1,12 @@
+##################################################################################################################
+#                                                                                                                #
+# Each component of this project has been split into it's own module. This file is here to stitch those          #
+# modules together and allow us to pass down variables which are globally identical.                             #
+#                                                                                                                #
+# Further reading: https://www.terraform.io/docs/modules/usage.html                                              #
+#                                                                                                                #
+##################################################################################################################
+
 module "network" {
   source      = "./network"
   region      = "${var.region}"

@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 server_type=$1
 
-echo "Updating YUM"
-sudo yum -y -q update
+echo "Setting server role: $server_type"
 
 echo "Installing required packages"
-sudo yum -y -q install git ruby-devel puppet
+sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+sudo yum -y install git ruby-devel puppet facter
 
 echo "Installing required RubyGems"
 sudo gem install librarian-puppet
-sudo gem install io-console
 
 #echo "Installing Terraform"
 #cd /tmp
@@ -21,16 +20,17 @@ echo "Setting up Puppet"
 sudo rm -rf /etc/puppet
 
 echo "Cloning Git Repo"
-sudo git clone git@github.com:Stevea37/Cervidae.git puppet
-sudo cp -r Cervidae/Puppet/* /etc/puppet
+sudo git clone https://github.com/Stevea37/Cervidae
+sudo cp -r Cervidae/Puppet /etc/
+sudo mv /etc/Puppet /etc/puppet
 
-
-cat <<'EOF' >> /tmp/servertype.sh
+cat <<EOF >> /tmp/servertype.sh
 #!/bin/bash
 
 echo "server_type=$server_type"
 EOF
 
+sudo mkdir -p /etc/facter/facts.d/
 sudo mv /tmp/servertype.sh /etc/facter/facts.d/
 sudo chmod 755 /etc/facter/facts.d/servertype.sh
 

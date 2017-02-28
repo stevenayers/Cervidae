@@ -1,3 +1,13 @@
+##################################################################################################################
+#                                                                                                                #
+# This is a module defining a single component of the project. You can set component-specific variables          #
+# using the variables.tf within this directory. This module pulls in the ec2 module defined in the module        #
+# directory.                                                                                                     #
+#                                                                                                                #
+# Further reading: https://www.terraform.io/docs/modules/usage.html                                              #
+#                                                                                                                #
+##################################################################################################################
+
 module "ec2" {
   source           = "../modules/ec2"
   vpc_id           = "${var.vpc_id}"
