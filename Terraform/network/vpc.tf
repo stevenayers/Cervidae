@@ -1,10 +1,12 @@
 ##################################################################################################################
 #                                                                                                                #
-# The Amazon Web Services (AWS) AWS_VPC Resource provisions and configures a VPC.                                #
+# The Amazon Web Services (AWS) AWS_VPC Resource provisions and configures a VPC, which defines the address      #
+# space and network configurations of your AWS environment.                                                      #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/vpc.html                                        #
 #                                                                                                                #
-# The Amazon Web Services (AWS) AWS_INTERNET_GATEWAY Resource provisions and configures an internet gateway.     #
+# The Amazon Web Services (AWS) AWS_INTERNET_GATEWAY Resource provisions and configures an internet gateway,     #
+# which provides the gateway for external traffic to pass in and out of your VPC.                                #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/internet_gateway.html                           #
 #                                                                                                                #
