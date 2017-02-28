@@ -7,6 +7,9 @@
 #                                                                                                                #
 ##################################################################################################################
 
+#
+# Network Module - Provisions the VPC, Subnet, Route Table and Security Group for all instances.
+#
 module "network" {
   source      = "./network"
   region      = "${var.region}"
@@ -16,6 +19,9 @@ module "network" {
   label       = "${var.network_label}"
 }
 
+#
+# S3 Module - Provisions the S3 Bucket to be used to backup and replicate ELK data. TODO: Testing
+#
 module "s3" {
   source      = "./s3"
   region      = "${var.region}"
@@ -23,6 +29,9 @@ module "s3" {
   bucket_name = "${var.bucket_name}"
 }
 
+#
+# Elasticsearch Module - Provisions the EC2 instance which will host Elasticsearch. TODO: Autoscaling
+#
 module "elasticsearch" {
   source           = "./elasticsearch"
   region           = "${var.region}"
@@ -36,6 +45,9 @@ module "elasticsearch" {
   private_key_path = "${var.private_key_path}"
 }
 
+#
+# Kibana Module - Provisions the EC2 instance which will host Kibana. TODO: Autoscaling
+#
 module "kibana" {
   source           = "./kibana"
   region           = "${var.region}"
@@ -49,6 +61,9 @@ module "kibana" {
   private_key_path = "${var.private_key_path}"
 }
 
+#
+# Logstash Module - Provisions the EC2 instance which will host Logstash. TODO: Autoscaling
+#
 module "logstash" {
   source           = "./logstash"
   region           = "${var.region}"
