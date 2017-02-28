@@ -6,8 +6,7 @@
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/security_group.html                             #
 #                                                                                                                #
-# The default_sg_id output variable is used upstream in the root project, and passed into                        #
-# the EC2 component modules.                                                                                     #
+# Output variables are used upstream in the root project, and passed into the EC2 component modules.             #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/configuration/outputs.html                                      #
 #                                                                                                                #

@@ -15,8 +15,7 @@
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/providers/aws/r/route_table.html                                #
 #                                                                                                                #
-# The frontend_subnet_id & subnet_id output variables are used upstream in the root project, and passed into     #
-# the EC2 component modules.                                                                                     #
+# Output variables are used upstream in the root project, and passed into the EC2 component modules.             #
 #                                                                                                                #
 # Further reading: https://www.terraform.io/docs/configuration/outputs.html                                      #
 #                                                                                                                #
