@@ -1,3 +1,12 @@
+##################################################################################################################
+#                                                                                                                #
+# Each component of this project has been split into it's own module. This file is here to pass globally         #
+# used values into the downstream modules via the main.tf file in the current directory.                         #
+#                                                                                                                #
+# Further reading: https://www.terraform.io/docs/configuration/variables.html                                    #
+#                                                                                                                #
+##################################################################################################################
+
 variable "region" {
   description = "The AWS region you want to deploy the environment to."
   default     = "eu-west-1"

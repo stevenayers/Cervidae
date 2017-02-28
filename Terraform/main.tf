@@ -46,10 +46,10 @@ module "elasticsearch" {
 }
 
 #
-# Kibana Module - Provisions the EC2 instance which will host Kibana. TODO: Autoscaling
+# Logstash Module - Provisions the EC2 instance which will host Logstash. TODO: Autoscaling
 #
-module "kibana" {
-  source           = "./kibana"
+module "logstash" {
+  source           = "./logstash"
   region           = "${var.region}"
   profile          = "${var.profile}"
   ami_id           = "${var.global_ami_id}"
@@ -62,10 +62,10 @@ module "kibana" {
 }
 
 #
-# Logstash Module - Provisions the EC2 instance which will host Logstash. TODO: Autoscaling
+# Kibana Module - Provisions the EC2 instance which will host Kibana. TODO: Autoscaling
 #
-module "logstash" {
-  source           = "./logstash"
+module "kibana" {
+  source           = "./kibana"
   region           = "${var.region}"
   profile          = "${var.profile}"
   ami_id           = "${var.global_ami_id}"
