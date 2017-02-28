@@ -3,5 +3,5 @@ terraform.tfstate
 terraform.tfstate.backup
 .terraform
 autoscaling
-Terraform/private_keys/*
+terraform/private_keys/*
 !.keep
