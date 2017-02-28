@@ -1,1 +1,4 @@
 ---
+
+classes:
+  - cervidae::roles::default
