@@ -1,4 +1,4 @@
 ---
 
 classes:
-  - fnc_core::roles::bastion
+  - cervidae::roles::elasticsearch
