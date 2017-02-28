@@ -1,4 +1,4 @@
 class cervidae::profiles::groups::init
 {
-    #  include cervidae::profiles::groups::
+    include cervidae::profiles::groups::cervidae
 }

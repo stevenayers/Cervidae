@@ -1,4 +1,4 @@
 class cervidae::profiles::users::init
 {
-    #  include cervidae::profiles::users::
+    include cervidae::profiles::users::cervidae
 }
