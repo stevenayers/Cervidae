@@ -1,7 +1,7 @@
 #
 # A simple class for managing a user
 #
-class fnc_core::profiles::users::cervidae {
+class cervidae::profiles::users::cervidae {
 
   accounts::user { 'cervidae':
     ensure        => present,

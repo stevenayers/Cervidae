@@ -1,4 +1,4 @@
 class cervidae::profiles::firewall::init
 {
-    #  include cervidae::profiles::firewall::
+    include cervidae::profiles::firewall::elk
 }

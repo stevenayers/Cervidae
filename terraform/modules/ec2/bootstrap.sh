@@ -21,8 +21,7 @@ sudo rm -rf /etc/puppet
 
 echo "Cloning Git Repo"
 sudo git clone https://github.com/Stevea37/Cervidae
-sudo cp -r Cervidae/Puppet /etc/
-sudo mv /etc/Puppet /etc/puppet
+sudo cp -r Cervidae/puppet /etc/
 
 cat <<EOF >> /tmp/servertype.sh
 #!/bin/bash
@@ -39,15 +38,3 @@ cd /etc/puppet
 sudo /usr/local/bin/librarian-puppet install
 sudo puppet apply /etc/puppet/manifests/site.pp
 
-cd ~/Cervidae && \
-echo Pulling changes && \
-sudo git pull && \
-echo Deleting old puppet && \
-sudo rm -rf /etc/puppet && \
-echo Moving new puppet && \
-sudo cp puppet /etc/ && \
-cd /etc/puppet && \
-echo Installing librarian-puppet stuff && \
-sudo /usr/local/bin/librarian-puppet install && \
-echo Applying Manifest && \
-sudo puppet apply /etc/puppet/manifests/site.pp
