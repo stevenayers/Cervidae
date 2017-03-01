@@ -1,7 +1,7 @@
 #
 # A simple class for managing groups
 #
-class fnc_core::profiles::groups::cervidae
+class cervidae::profiles::groups::cervidae
   {
     group { 'cervidae':
       ensure => 'present',
