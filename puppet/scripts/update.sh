@@ -7,7 +7,7 @@ sudo git pull && \
 echo Deleting old puppet && \
 sudo rm -rf /etc/puppet && \
 echo Moving new puppet && \
-sudo cp puppet /etc/ && \
+sudo cp -r puppet /etc/ && \
 cd /etc/puppet && \
 echo Installing librarian-puppet stuff && \
 sudo /usr/local/bin/librarian-puppet install && \
