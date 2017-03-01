@@ -4,5 +4,7 @@ class cervidae::roles::default {
 
   include cervidae::profiles::users::init
   include cervidae::profiles::groups::init
+  include cervidae::profiles::firewall::init
+  include cervidae::profiles::filebeat::init
 
 }

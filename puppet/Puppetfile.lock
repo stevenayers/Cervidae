@@ -1,0 +1,85 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    elastic-elasticsearch (5.0.0)
+      puppet-yum (>= 0.9.6)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-java (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+      richardc-datacat (< 1.0.0, >= 0.6.2)
+    elasticsearch-logstash (0.6.6)
+      electrical-file_concat (< 2.0.0, >= 0.1.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    electrical-file_concat (1.0.1)
+    lesaux-kibana4 (1.0.17)
+      puppetlabs-apt (< 3.0.0, >= 2.1.0)
+    lwf-remote_file (1.1.3)
+    pcfens-filebeat (0.10.4)
+      lwf-remote_file (< 2.0.0, >= 0.2.0)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-powershell (< 2.0.0, >= 1.0.1)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+    puppet-yum (1.0.0)
+      puppetlabs-concat (< 3.0.0, >= 1.2.5)
+      puppetlabs-stdlib (< 5.0.0, >= 4.10.0)
+    puppetlabs-apt (2.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-concat (2.2.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
+    puppetlabs-java (1.6.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
+    puppetlabs-powershell (1.0.6)
+    puppetlabs-registry (1.1.3)
+      puppetlabs-stdlib (>= 2.3.0)
+    puppetlabs-stdlib (4.15.0)
+    richardc-datacat (0.6.2)
+    rmueller-cron (0.2.0)
+    yo61-logrotate (1.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 1.0.0)
+
+GIT
+  remote: git://github.com/axltxl/puppet-issue.git
+  ref: master
+  sha: 214309733871ef0100d27c47d13e612447340b7d
+  specs:
+    puppet-issue (0.1.3)
+      puppetlabs-stdlib (< 5.0.0, >= 4.4.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-accounts
+  ref: master
+  sha: 7d1c6dd0970e836445f43029490f4034b1e7a0d1
+  specs:
+    puppet-accounts (1.1.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.4.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-firewall.git
+  ref: master
+  sha: 463ec1d0f5c50a719cb96e6479d90b8de8f41489
+  specs:
+    puppet-firewalls (1.8.2)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-motd.git
+  ref: master
+  sha: c7564b4c763b1d592960f41603a3d6ffb4067281
+  specs:
+    puppetlabs-motd (1.4.0)
+      puppetlabs-registry (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.1.0)
+
+DEPENDENCIES
+  elastic-elasticsearch (= 5.0.0)
+  elasticsearch-logstash (= 0.6.6)
+  lesaux-kibana4 (= 1.0.17)
+  pcfens-filebeat (= 0.10.4)
+  puppet-accounts (>= 0)
+  puppet-firewalls (>= 0)
+  puppet-issue (>= 0)
+  puppetlabs-java (= 1.6.0)
+  puppetlabs-motd (>= 0)
+  puppetlabs-stdlib (>= 0)
+  rmueller-cron (>= 0)
+  yo61-logrotate (= 1.4.0)
+

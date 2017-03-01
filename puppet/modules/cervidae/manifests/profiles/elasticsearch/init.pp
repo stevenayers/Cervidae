@@ -1,4 +1,4 @@
 class cervidae::profiles::elasticsearch::init
 {
-    #  include cervidae::profiles::elasticsearch::
+  elasticsearch::instance { 'es-01': }
 }

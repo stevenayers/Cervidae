@@ -31,8 +31,11 @@ mod 'elastic-elasticsearch', '5.0.0'
 # Manage Logstash
 mod 'elasticsearch-logstash', '0.6.6'
 
-#Manage Kibana
+# Manage Kibana
 mod 'lesaux-kibana4', '1.0.17'
 
 # Manage Java
 mod 'puppetlabs-java', '1.6.0'
+
+# Manage Filebeat
+mod 'pcfens-filebeat', '0.10.4'
