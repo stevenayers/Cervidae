@@ -1,8 +1,8 @@
 class cervidae::profiles::filebeat::init
   {
-    filebeat { 'filebeat':
+    class { 'filebeat':
       outputs => {
-        'logstash'     => {
+        'logstash' => {
           'hosts' => [
             'localhost:5044',
             'anotherserver:5044'
