@@ -10,7 +10,6 @@ class cervidae::profiles::users::cervidae {
     groups        => ['ssh-users', 'wheel'],
     purge_sshkeys => true,
     managehome    => true,
-    require       => Group['cervidae']
   }
 
 }
