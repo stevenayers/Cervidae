@@ -5,3 +5,7 @@ terraform.tfstate.backup
 autoscaling
 terraform/private_keys/*
 !.keep
+puppet/modules/*
+!puppet/modules/cervidae
+.librarian
+puppet/.tmp
