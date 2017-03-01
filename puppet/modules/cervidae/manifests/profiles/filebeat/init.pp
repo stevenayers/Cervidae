@@ -1,6 +1,6 @@
 class cervidae::profiles::filebeat::init
   {
-    filebeat { 'default':
+    class { 'filebeat':
       outputs => {
         'logstash' => {
           'hosts' => [
@@ -10,5 +10,13 @@ class cervidae::profiles::filebeat::init
           'loadbalance' => true,
         },
       },
+    }
+
+    filebeat::prospector { 'syslogs':
+      paths    => [
+        '/var/log/auth.log',
+        '/var/log/syslog',
+      ],
+      doc_type => 'syslog-beat',
     }
   }
