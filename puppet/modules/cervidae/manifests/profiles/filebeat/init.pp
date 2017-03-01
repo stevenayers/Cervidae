@@ -1,6 +1,6 @@
 class cervidae::profiles::filebeat::init
   {
-    class { 'filebeat':
+    filebeat { 'default':
       outputs => {
         'logstash' => {
           'hosts' => [
