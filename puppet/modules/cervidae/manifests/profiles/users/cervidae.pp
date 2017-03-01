@@ -7,7 +7,6 @@ class cervidae::profiles::users::cervidae {
     ensure        => present,
     password      => '!!',
     comment       => 'Cervidae Service Account',
-    groups        => ['ssh-users', 'wheel'],
     purge_sshkeys => true,
     managehome    => true,
   }
