@@ -43,7 +43,7 @@ module "elasticsearch" {
   key_pair           = "${var.key_pair}"
   default_sg_id      = "${module.network.default_sg_id}"
   private_key_path   = "${var.private_key_path}"
-  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_id   = "${module.network.internal_zone_id}"
   internal_zone_name = "${var.internal_zone_name}"
 }
 
@@ -61,7 +61,7 @@ module "logstash" {
   key_pair           = "${var.key_pair}"
   default_sg_id      = "${module.network.default_sg_id}"
   private_key_path   = "${var.private_key_path}"
-  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_id   = "${module.network.internal_zone_id}"
   internal_zone_name = "${var.internal_zone_name}"
 }
 
@@ -79,6 +79,6 @@ module "kibana" {
   key_pair           = "${var.key_pair}"
   default_sg_id      = "${module.network.default_sg_id}"
   private_key_path   = "${var.private_key_path}"
-  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_id   = "${module.network.internal_zone_id}"
   internal_zone_name = "${var.internal_zone_name}"
 }
