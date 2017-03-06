@@ -1,20 +1,5 @@
 class cervidae::profiles::kibana::init
 {
-
-    file { '/var/log/kibana':
-      ensure => 'directory',
-      owner  => 'kibana',
-      group  => 'kibana',
-      mode   => '0775',
-    }
-
-    file { '/var/run/kibana':
-      ensure => 'directory',
-      owner  => 'kibana',
-      group  => 'kibana',
-      mode   => '0775',
-    }
-
   class { 'kibana4':
     config => {
       'server.port'                  => 5601,
@@ -43,4 +28,19 @@ class cervidae::profiles::kibana::init
       'logging.dest'                 => '/var/log/kibana/kibana.log',
     },
   }
+
+    file { '/var/log/kibana':
+      ensure => 'directory',
+      owner  => 'kibana',
+      group  => 'kibana',
+      mode   => '0775',
+    }
+
+    file { '/var/run/kibana':
+      ensure => 'directory',
+      owner  => 'kibana',
+      group  => 'kibana',
+      mode   => '0775',
+    }
+
 }
