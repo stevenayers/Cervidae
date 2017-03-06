@@ -24,8 +24,8 @@ class cervidae::profiles::kibana::init
       #'elasticsearch.ssl.ca'         => '[/path/to/a/CA,path/to/anotherCA/]',
       #'server.ssl.key'               => '/path/to/your/ssl/key',
       #'server.ssl.cert'              => '/path/to/your/ssl/cert',
-      'pid.file'                     => '/var/run/kibana.pid',
-      'logging.dest'                 => '/var/log/kibana.log',
+      'pid.file'                     => '/var/run/kibana/kibana.pid',
+      'logging.dest'                 => '/var/log/kibana/kibana.log',
     },
   }
 }
