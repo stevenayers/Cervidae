@@ -50,3 +50,11 @@ variable "remote_user" {
   description = "The account that should be used on the instance for the remote-exec and file provisioner."
   default     = "centos"
 }
+
+variable "internal_zone_name" {
+  description = "Internal DNS Name Suffix (AWS_ROUTE53_ZONE defined in network module)."
+}
+
+variable "internal_zone_id" {
+  description = "The ID of the AWS_ROUTE53_ZONE resource defined in the network module"
+}
