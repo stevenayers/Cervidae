@@ -33,16 +33,18 @@ module "s3" {
 # Elasticsearch Module - Provisions the EC2 instance which will host Elasticsearch. TODO: Autoscaling
 #
 module "elasticsearch" {
-  source           = "./elasticsearch"
-  region           = "${var.region}"
-  profile          = "${var.profile}"
-  ami_id           = "${var.global_ami_id}"
-  instance_type    = "${var.global_instance_type}"
-  vpc_id           = "${module.network.vpc_id}"
-  subnet_id        = "${module.network.subnet_id}"
-  key_pair         = "${var.key_pair}"
-  default_sg_id    = "${module.network.default_sg_id}"
-  private_key_path = "${var.private_key_path}"
+  source             = "./elasticsearch"
+  region             = "${var.region}"
+  profile            = "${var.profile}"
+  ami_id             = "${var.global_ami_id}"
+  instance_type      = "${var.global_instance_type}"
+  vpc_id             = "${module.network.vpc_id}"
+  subnet_id          = "${module.network.subnet_id}"
+  key_pair           = "${var.key_pair}"
+  default_sg_id      = "${module.network.default_sg_id}"
+  private_key_path   = "${var.private_key_path}"
+  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_name = "${var.internal_zone_name}"
 }
 
 #
@@ -50,15 +52,17 @@ module "elasticsearch" {
 #
 module "logstash" {
   source           = "./logstash"
-  region           = "${var.region}"
-  profile          = "${var.profile}"
-  ami_id           = "${var.global_ami_id}"
-  instance_type    = "${var.global_instance_type}"
-  vpc_id           = "${module.network.vpc_id}"
-  subnet_id        = "${module.network.subnet_id}"
-  key_pair         = "${var.key_pair}"
-  default_sg_id    = "${module.network.default_sg_id}"
-  private_key_path = "${var.private_key_path}"
+  region             = "${var.region}"
+  profile            = "${var.profile}"
+  ami_id             = "${var.global_ami_id}"
+  instance_type      = "${var.global_instance_type}"
+  vpc_id             = "${module.network.vpc_id}"
+  subnet_id          = "${module.network.subnet_id}"
+  key_pair           = "${var.key_pair}"
+  default_sg_id      = "${module.network.default_sg_id}"
+  private_key_path   = "${var.private_key_path}"
+  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_name = "${var.internal_zone_name}"
 }
 
 #
@@ -66,13 +70,15 @@ module "logstash" {
 #
 module "kibana" {
   source           = "./kibana"
-  region           = "${var.region}"
-  profile          = "${var.profile}"
-  ami_id           = "${var.global_ami_id}"
-  instance_type    = "${var.global_instance_type}"
-  vpc_id           = "${module.network.vpc_id}"
-  subnet_id        = "${module.network.subnet_id}"
-  key_pair         = "${var.key_pair}"
-  default_sg_id    = "${module.network.default_sg_id}"
-  private_key_path = "${var.private_key_path}"
+  region             = "${var.region}"
+  profile            = "${var.profile}"
+  ami_id             = "${var.global_ami_id}"
+  instance_type      = "${var.global_instance_type}"
+  vpc_id             = "${module.network.vpc_id}"
+  subnet_id          = "${module.network.subnet_id}"
+  key_pair           = "${var.key_pair}"
+  default_sg_id      = "${module.network.default_sg_id}"
+  private_key_path   = "${var.private_key_path}"
+  interal_zone_id    = "${module.network.internal_zone_id}"
+  internal_zone_name = "${var.internal_zone_name}"
 }

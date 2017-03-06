@@ -49,10 +49,15 @@ variable "subnet_cidr" {
 
 variable "network_label" {
   description = "The value of this variable will be used to label the VPC, Subnet etc. in your AWS console."
-  default = "Cervidae"
+  default     = "Cervidae"
 }
 
 variable "bucket_name" {
   description = "Name of the bucket used to store Cervidae data"
-  default = "cervidae"
+  default     = "cervidae"
+}
+
+variable "internal_zone_name" {
+  description = "Internal DNS Name Suffix"
+  default     = "cervidae.internal"
 }

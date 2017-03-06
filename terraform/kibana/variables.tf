@@ -54,3 +54,12 @@ variable "private_key_path" {
 variable "default_sg_id" {
   description = "The ID for the security group applied to all instances. This is defined in the network module."
 }
+
+variable "internal_zone_name" {
+  description = "Internal DNS Name Suffix (AWS_ROUTE53_ZONE defined in network module)."
+  default     = "cervidae.internal"
+}
+
+variable "internal_zone_id" {
+  description = "The ID of the AWS_ROUTE53_ZONE resource defined in the network module"
+}

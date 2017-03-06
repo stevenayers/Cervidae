@@ -1,6 +1,6 @@
 class cervidae::profiles::firewall::kibana {
 
-  notice("Running kibana firewall configurations for $server_type.")
+  notice("Running kibana firewall configurations for ${::server_type}.")
 
   firewall { '007 Allow inbound HTTP (80)':
     dport   => 80,
