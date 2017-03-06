@@ -6,8 +6,5 @@ class cervidae::profiles::elasticsearch::init
     repo_version => '5.x',
   }
 
-  elasticsearch::instance { 'es-01':
-    ensure => 'present',
-    status => 'enabled',
-  }
+  elasticsearch::instance { 'es-01': }
 }
