@@ -23,7 +23,7 @@ resource "aws_security_group" "elasticsearch" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = []
+    cidr_blocks = ["10.0.0.0/24"]
   }
 
   egress {

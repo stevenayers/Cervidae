@@ -21,13 +21,14 @@ module "network" {
 
 #
 # S3 Module - Provisions the S3 Bucket to be used to backup and replicate ELK data. TODO: Testing
+#    This has been commented out to avoid deleting data on every apply. YOU ONLY NEED TO RUN THIS ON FIRST RUN.
 #
-module "s3" {
-  source      = "./s3"
-  region      = "${var.region}"
-  profile     = "${var.profile}"
-  bucket_name = "${var.bucket_name}"
-}
+#module "s3" {
+#  source      = "./s3"
+#  region      = "${var.region}"
+#  profile     = "${var.profile}"
+#  bucket_name = "${var.bucket_name}"
+#}
 
 #
 # Elasticsearch Module - Provisions the EC2 instance which will host Elasticsearch. TODO: Autoscaling

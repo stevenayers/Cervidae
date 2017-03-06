@@ -35,11 +35,10 @@ resource "aws_security_group" "default" {
   }
 
   ingress {
-    protocol = 200
-    cidr_block = "10.0.0.0/16"
-    protocol = "icmp"
     from_port = 8
     to_port = 0
+    protocol = "icmp"
+    cidr_blocks = ["10.0.0.0/16"]
   }
 
   egress {
