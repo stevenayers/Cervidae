@@ -1,10 +1,10 @@
 class cervidae::profiles::kibana::init
 {
-  class { 'kibana4::config':
+  class { 'kibana4':
     config => {
       'server.port'                  => 5601,
       'server.host'                  => '0.0.0.0',
-      'elasticsearch.url'            => 'http://localhost:9200',
+      'elasticsearch.url'            => 'http://elasticsearch.cervidae.internal:9200',
       'elasticsearch.preserveHost'   => true,
       'elasticsearch.ssl.cert'       => '/path/to/your/cert',
       'elasticsearch.ssl.key'        => '/path/to/your/key',
