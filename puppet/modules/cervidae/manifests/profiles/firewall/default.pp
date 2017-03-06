@@ -1,4 +1,11 @@
-class cervidae::profiles::firewall::elk
+class cervidae::profiles::firewall::default
   {
-    notice("Running firewall configurations for $server_type.")
+    notice("Running default firewall configurations for $server_type.")
+
+    firewall { '001 Allow inbound HTTP (22)':
+      dport   => 22,
+      proto   => tcp,
+      action  => accept,
+    }
+
   }
