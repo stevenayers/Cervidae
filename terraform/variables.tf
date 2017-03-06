@@ -24,7 +24,7 @@ variable "global_ami_id" {
 
 variable "global_instance_type" {
   description = "The instance size to be used across all instances. You can specify a different size in the individual config."
-  default     = "t2.nano"
+  default     = "t2.micro"
 }
 
 variable "key_pair" {
