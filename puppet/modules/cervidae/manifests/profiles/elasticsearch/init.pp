@@ -1,4 +1,13 @@
 class cervidae::profiles::elasticsearch::init
 {
-  elasticsearch::instance { 'es-01': }
+  class { 'elasticsearch':
+    java_install => true,
+    manage_repo  => true,
+    repo_version => '5.x',
+  }
+
+  elasticsearch::instance { 'es-01':
+    ensure => 'present',
+    status => 'enabled',
+  }
 }

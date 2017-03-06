@@ -10,12 +10,6 @@ sudo yum -y install git ruby-devel puppet facter
 echo "Installing required RubyGems"
 sudo gem install librarian-puppet
 
-#echo "Installing Terraform"
-#cd /tmp
-#wget https://releases.hashicorp.com/terraform/0.7.3/terraform_0.7.3_linux_amd64.zip
-#unzip terraform_0.7.3_linux_amd64.zip
-#sudo mv -f terraform /usr/local/bin/
-
 echo "Setting up Puppet"
 sudo rm -rf /etc/puppet
 
