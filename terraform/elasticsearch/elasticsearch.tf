@@ -11,7 +11,7 @@
 module "ec2" {
   source             = "../modules/ec2"
   vpc_id             = "${var.vpc_id}"
-  instance_type      = "${var.instance_type}"
+  instance_type      = "t2.medium" #"${var.instance_type}"
   ami_id             = "${var.ami_id}"
   server_type        = "${var.server_type}"
   key_pair           = "${var.key_pair}"
