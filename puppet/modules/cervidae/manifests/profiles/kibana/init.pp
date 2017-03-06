@@ -25,7 +25,7 @@ class cervidae::profiles::kibana::init
       #'server.ssl.key'               => '/path/to/your/ssl/key',
       #'server.ssl.cert'              => '/path/to/your/ssl/cert',
       'pid.file'                     => '/var/run/kibana.pid',
-      'logging.dest'                 => '/var/log/kibana/kibana.log',
+      'logging.dest'                 => '/var/log/kibana.log',
     },
   }
 }
