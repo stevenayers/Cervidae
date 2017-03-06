@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+opts="$@"
 
 cd ~/Cervidae && \
 echo Pulling changes && \
@@ -12,4 +12,4 @@ cd /etc/puppet && \
 echo Installing librarian-puppet stuff && \
 sudo /usr/local/bin/librarian-puppet install && \
 echo Applying Manifest && \
-sudo puppet apply /etc/puppet/manifests/site.pp
+sudo puppet apply /etc/puppet/manifests/site.pp $opts
