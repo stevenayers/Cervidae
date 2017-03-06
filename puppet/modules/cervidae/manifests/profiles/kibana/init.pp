@@ -1,5 +1,13 @@
 class cervidae::profiles::kibana::init
 {
+
+    file { '/var/log/kibana':
+      ensure => 'directory',
+      owner  => 'kibana',
+      group  => 'kibana',
+      mode   => '0775',
+    }
+
   class { 'kibana4':
     config => {
       'server.port'                  => 5601,
