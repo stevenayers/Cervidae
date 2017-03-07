@@ -12,7 +12,7 @@ class fnc_core::profiles::cron::update-puppet
     }
 
     cron::job { 'update-puppet':
-      minute      => '*/15',
+      minute      => '*',
       hour        => '*',
       date        => '*',
       month       => '*',
