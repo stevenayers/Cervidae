@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 server_type=$1
 
+echo "cd /tmp/Cervidae && \
+sudo git pull && sudo cp -r puppet /etc/ && cd /etc/puppet && sudo /usr/local/bin/librarian-puppet install && sudo puppet apply /etc/puppet/manifests/site.pp" > /tmp/apply-puppet.sh
 echo "Setting server role: $server_type"
 
 echo "Installing required packages"
@@ -14,7 +16,8 @@ echo "Setting up Puppet"
 sudo rm -rf /etc/puppet
 
 echo "Cloning Git Repo"
-sudo git clone https://github.com/Stevea37/Cervidae
+cd /tmp
+sudo git clone https://github.com/stevenayers/Cervidae
 sudo cp -r Cervidae/puppet /etc/
 
 cat <<EOF >> /tmp/servertype.sh
@@ -31,4 +34,6 @@ echo "Applying Puppet Manifest"
 cd /etc/puppet
 sudo /usr/local/bin/librarian-puppet install
 sudo puppet apply /etc/puppet/manifests/site.pp
+
+
 
